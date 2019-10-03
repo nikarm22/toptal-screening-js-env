@@ -15,9 +15,11 @@ touch "${name}/index.spec.js"
 echo "module.exports = () => 4;
 " >> "${name}/index.js"
 
-echo "const exp = require('./');
+echo "const fn = require('./');
 
-test('Test name', () => {
-  expect(exp(123)).toBe(4);
+describe('Testing Sandbox', () => {
+  test('Test name', () => {
+    expect(fn(123)).toBe(4);
+  });
 });
 " >> "${name}/index.spec.js"
