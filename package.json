@@ -1,0 +1,17 @@
+{
+  "name": "toptal-screening",
+  "version": "1.0.0",
+  "description": "Simple JS environment generator for Toptal screening 3-rd step",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "start": "./scripts/runPrj.sh",
+    "gen": "./scripts/generatePrj.sh"
+  },
+  "keywords": [],
+  "author": "Nikarm",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
